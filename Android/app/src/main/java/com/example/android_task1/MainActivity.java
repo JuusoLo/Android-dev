@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final ImageView imageView = findViewById(R.id.Läpsy);
 
+       
 
         final Button button = findViewById(R.id.Tuosta);
         button.setOnClickListener(new View.OnClickListener() {
