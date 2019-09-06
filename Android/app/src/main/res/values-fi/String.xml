@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Saako Läppästä?</string>
+    <string name="Läppäsy">Saako Läppästä?</string>
+    <string name="Läppäsy">Saako Läppästä?</string>
+</resources>
