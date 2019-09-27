@@ -2,4 +2,16 @@
 <resources>
     <string name="app_name">Saako Läppästä?</string>
     <string name="Läppäsy">Saako Läppästä?</string>
+    <string name="start_msg">Arvaappa numero</string>
+    <string name="too_high">Yli mään</string>
+    <string name="too_low">Ali mään</string>
+    <string name="correct">Mahtavaa! Arvasit oikean numeron!</string>
+    <string name="validate">Syötä</string>
+    <string name="game">Peli</string>
+    <string name="Here">Tuosta</string>
+    <string name="game_name">Arvaappa numero</string>
+
+
+
+
 </resources>

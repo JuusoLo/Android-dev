@@ -2,6 +2,7 @@ package com.example.android_task1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +13,12 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "Logcat viesti:";
+    public void onButtonClick(View v){
+        Intent myIntent = new Intent(getBaseContext(),   Game.class);
+        startActivity(myIntent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        Log.d(TAG, " Vamos a la playa.");
+        Log.e(TAG, "Cama or Vama?");
 
 
 
