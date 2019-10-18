@@ -9,6 +9,8 @@
     <string name="game">Game</string>
     <string name="Here">Here</string>
     <string name="game_name">GuessTheNumber</string>
+    <string name="CurrentLocation">Current Location</string>
+    <string name="title_activity_alarm_timer">AlarmTimer</string>
 
 
 </resources>
