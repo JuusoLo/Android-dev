@@ -22,6 +22,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import java.io.IOException;
 import java.util.List;
 
@@ -44,9 +45,15 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
     private static final String TAG = "Logcat viesti:";
     public void onButtonClick(View v) {
-        Intent myIntent = new Intent(getBaseContext(), Game.class);
-        startActivity(myIntent);
+        Intent myGame = new Intent(getBaseContext(), Game.class);
+        startActivity(myGame);
 }
+    public void onClickTimer(View view) {
+        Intent myTimer = new Intent(getBaseContext(), AlarmTimer.class);
+        startActivity(myTimer);
+
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,8 +84,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
 
 
-        Log.d(TAG, " Vamos a la playa.");
-        Log.d(TAG, "Cama or Vama?");
 
 
     }
@@ -136,9 +141,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     public void onLocationChanged(Location location) {
         double latitude = location.getLatitude();
         double longitude = location.getLongitude();
-        Log.e(TAG, location.getLatitude()+"");
-        Log.e(TAG, location.getLongitude()+"");
-
 
 
         try {
@@ -152,14 +154,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 addressView.setText(address);
                 currentAddress = address;
             }
-//            Log.e(TAG,"Kanapasta");
-//            addresses = geocoder.getFromLocation(
-//                    location.getLatitude(),
-//                    location.getLongitude(),
-//                    1);
-//
 
-            Log.e(TAG, addresses.toString());
 
         }catch (IOException ioException){
             ioException.printStackTrace();
@@ -184,10 +179,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     public void onProviderDisabled(String s) {
 
     }
-
-    public void onClickTimer(View view) {
-        Intent myIntent = new Intent(getBaseContext(), AlarmTimer.class);
-        startActivity(myIntent);
-
-    }
+//
+//    public void onClickContacts(View view) {
+//        Intent myContacts = new Intent(getBaseContext(), Contacts.class);
+//        startActivity(myContacts);
+//    }
 }

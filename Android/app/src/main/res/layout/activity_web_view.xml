@@ -4,33 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_flat_mountains"
+    android:background="@drawable/googlr"
     tools:context=".WebView">
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="237dp"
-        android:layout_height="147dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="84dp"
-        android:fontFamily="monospace"
-        android:text="Click on the button if you want to go to google"
+        android:layout_width="400dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/anaheim"
+        android:text="Click on the search button if you want to go to google"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="177dp"
-        android:layout_height="101dp"
-        android:layout_marginEnd="117dp"
-        android:layout_marginBottom="395dp"
+        android:layout_width="101dp"
+        android:layout_height="68dp"
+        android:background="@drawable/custom_button2"
         android:clickable="true"
         android:onClick="onClickSearch"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_open_in_browser_black_24dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.477"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

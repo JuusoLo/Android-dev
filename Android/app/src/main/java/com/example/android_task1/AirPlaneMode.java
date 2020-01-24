@@ -20,31 +20,4 @@ public class AirPlaneMode extends BroadcastReceiver {
         }
 
     }
-
-//    private static class Task extends AsyncTask<String, Integer, String> {
-//
-//        private final PendingResult pendingResult;
-//        private final Intent intent;
-//
-//        private Task(PendingResult pendingResult, Intent intent) {
-//            this.pendingResult = pendingResult;
-//            this.intent = intent;
-//        }
-//
-//
-//        @Override
-//        protected String doInBackground(String... strings) {
-//            StringBuilder sb = new StringBuilder();
-//            sb.append("Action: " + intent.getAction() + "\n");
-//            sb.append("URI: " + intent.toUri(Intent.URI_INTENT_SCHEME).toString() + "\n");
-//            String log = sb.toString();
-//            Log.d(TAG, log);
-//            return log;
-//        }
-//        @Override
-//        protected void onPostExecute(String s) {
-//            super.onPostExecute(s);
-//            pendingResult.finish();
-//        }
-//    }
-}
+ }

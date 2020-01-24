@@ -7,7 +7,7 @@
     android:alwaysDrawnWithCache="false"
     android:animateLayoutChanges="false"
     android:animationCache="false"
-    android:background="@drawable/ic_flat_mountains"
+    android:background="@drawable/background"
     android:backgroundTint="@color/colorPrimaryDark"
     android:backgroundTintMode="screen"
     android:clickable="true"
@@ -21,85 +21,123 @@
         android:id="@+id/Läppäsy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="128dp"
-        android:fontFamily="@font/bubblegum_sans"
-        android:text="@string/Läppäsy"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/news_cycle"
+        android:text="Android sovellus"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="36sp"
         android:typeface="sans"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Tuosta"
         style="@style/Base.TextAppearance.AppCompat.Small"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="300dp"
-        android:text="@string/Here"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:background="@drawable/custom_button2"
+        android:text="Paina tästä, niin näet mitä siitä tapahtuu"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
     <ImageView
         android:id="@+id/Läpsy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginBottom="12dp"
-        android:background="#00690606"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ukkeli"
         android:scaleType="center"
-        app:layout_constraintBottom_toTopOf="@+id/Tuosta"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Läppäsy"
-        app:layout_constraintVertical_bias="0.379"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Läppäsy" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/custom_button2"
         android:onClick="onButtonClick"
         android:text="@string/game"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="224dp"
+        android:background="@drawable/custom_button2"
         android:onClick="onClickWeb"
         android:text="Web view"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/goTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
 
     <TextView
         android:id="@+id/CurrentLocation"
         android:layout_width="266dp"
         android:layout_height="80dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button"
         android:text="TextView"
         android:textAlignment="center"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/goTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="296dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button2"
         android:onClick="onClickTimer"
         android:text="Timer"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/custom_button"
+        android:textColor="#000000"
+        android:layout_marginBottom="224dp"
+        android:text="contacts"
+        android:onClick="onClickContacts"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="72dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="40dp"
+        android:text="Contacts are upcoming feature. Stay tuned."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
